@@ -3,7 +3,7 @@
 
 **hand-activity-recognition** is a public repository of a Neuton.ai company containing a pretrained hand activity recognition model.
 
-Please refer to more successful Neuton.ai TinyML models on hackster `https://www.hackster.io/neuton-tiny-machine-learning1 <
+Please refer to more successful Neuton.ai TinyML models on `hackster <https://www.hackster.io/neuton-tiny-machine-learning1>`_.
 
 Within Neuton.ai TinyML lab we have developed a hand activity recognition model that can recongize 5 different activities:
 - brushing hair
