@@ -3,6 +3,8 @@
 
 **hand-activity-recognition** is a public repository of a Neuton.ai company containing a pretrained hand activity recognition model.
 
+Please refer to more successful Neuton.ai TinyML models on hackster `https://www.hackster.io/neuton-tiny-machine-learning1 <
+
 Within Neuton.ai TinyML lab we have developed a hand activity recognition model that can recongize 5 different activities:
 - brushing hair
 - brushing teet
@@ -40,19 +42,14 @@ Embeding manual
 
 Please refer to the video example of inferencing the model.
 
-**boilerplate-code contains:**
-
-- PasswordGenerator class that allows to generate random passwords
-- more to come...
-
 Development
 -----------
 
-We welcome new contributors of all experience levels. The boilerplatecode
+We welcome new contributors of all experience levels. The NeutonTinyML
 community goals are to be helpful, welcoming, and effective. The
 `Development Guide <https://scikit-learn.org/stable/developers/index.html>`_
 has detailed information about contributing code, documentation, tests, and
-more. We've included some basic information in this README.
+more.
 
 Important links
 ---------------
@@ -70,8 +67,13 @@ You can check the latest sources with the command::
 Communication
 -------------
 
-- Neuton.ai email: 
 - Neuton.ai web site: https://neuton.ai/
+- LinedIn: https://www.linkedin.com/company/neuton/mycompany/verification/
+- Facebook: https://www.facebook.com/NeutonAI
+- Twitter: https://twitter.com/NeutonAI
+- Slack: https://neutonautoml.slack.com/join/shared_invite/zt-19zmrhmwk-51llYk09u18soU_kdIiJvg#/shared-invite/email
+- Hackster: https://www.hackster.io/neuton-tiny-machine-learning1
+- YouTube: https://www.youtube.com/channel/UCtkEpWMAplbzQZYTAdVmL_Q
 
 Citation
 --------
