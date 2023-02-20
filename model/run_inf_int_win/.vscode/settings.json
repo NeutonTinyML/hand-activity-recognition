@@ -1,0 +1,7 @@
+{
+	"files.associations": {
+		"neuton_dsp_statistic.h": "c",
+		"neuton_mem.h": "c",
+		"neuton_osl_window_feed_source.inc.h": "c"
+	}
+}
