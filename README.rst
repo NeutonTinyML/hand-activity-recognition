@@ -25,17 +25,17 @@ Embeding manual
 3. Open the file run_inf_int_win.ino from the downloaded archive
 4. Select the Nicla Sense ME board from the drop-down menu
 
-.. image:: embed-manual-1
+.. image:: embed-manual-1.png
 
 5. Click on the 'Upload' button
 
-.. image:: embed-manual-2
+.. image:: embed-manual-2.png
 
 6. Open the Serial Monitor
 7. Perform the desired activity
 8. The model will output the corresponding class and its probability
 
-.. image:: embed-manual-3
+.. image:: embed-manual-3.png
 
 
 Please refer to the video example of inferencing the model.
