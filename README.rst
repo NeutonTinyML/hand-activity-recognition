@@ -24,13 +24,19 @@ Embeding manual
 2. Install the Arduino IDE
 3. Open the file run_inf_int_win.ino from the downloaded archive
 4. Select the Nicla Sense ME board from the drop-down menu
+
 .. image:: embed-manual-1.jpeg
+
 5. Click on the 'Upload' button
+
 .. image:: embed-manual-2.jpeg
+
 6. Open the Serial Monitor
 7. Perform the desired activity
 8. The model will output the corresponding class and its probability
+
 .. image:: embed-manual-3.jpeg
+
 
 Please refer to the video example of inferencing the model.
 
