@@ -21,10 +21,10 @@ static neuton_i32_t var_by_sum_n_tss_i16_(neuton_i32_t sum, neuton_u64_t sum_of_
                                      neuton_u16_t num)
 {
     /* Compute Mean of squares */
-    neuton_i64_t mean_of_squares = (neuton_i64_t)(sum_of_squares / (num - 1U));
+    neuton_i64_t mean_of_squares = (neuton_i64_t)(sum_of_squares / num);
 
     /* Compute Square of mean */
-    neuton_i64_t square_of_mean = (neuton_i64_t)((sum * sum) / (num * (num - 1U)));
+    neuton_i64_t square_of_mean = (neuton_i64_t)((sum * sum) / (num * num));
 
     return (neuton_i32_t)(mean_of_squares - square_of_mean);
 }
@@ -83,7 +83,7 @@ static neuton_i32_t var_by_mean_i16_(const neuton_i16_t* p_input, neuton_u16_t n
         loop_cnt--;
     }
 
-    return (neuton_i32_t)(sum / (num - 1));
+    return (neuton_i32_t)(sum / num);
 }
 
 // ///////////////////////////////////////////////////////////////////////////
@@ -140,7 +140,7 @@ static neuton_i32_t var_by_mean_i16_s_(const neuton_i16_t* p_input, neuton_u16_t
         loop_cnt--;
     }
 
-    return (neuton_i32_t)(sum / (num - 1));
+    return (neuton_i32_t)(sum / num);
 }
 
 // ///////////////////////////////////////////////////////////////////////////

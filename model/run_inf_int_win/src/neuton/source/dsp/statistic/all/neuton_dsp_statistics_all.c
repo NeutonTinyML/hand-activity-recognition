@@ -123,6 +123,10 @@
 #include "../zero_crossing/neuton_dsp_zcr_i16.c"
 #include "../zero_crossing/neuton_dsp_zcr_i32.c"
 
+#include "../amdf/neuton_dsp_amdf_f32.c"
+#include "../amdf/neuton_dsp_amdf_i8.c"
+#include "../amdf/neuton_dsp_amdf_i16.c"
+
 #else
 
 /** ISO C forbids an empty translation unit [-Wpedantic] */

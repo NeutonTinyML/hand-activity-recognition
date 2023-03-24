@@ -48,6 +48,8 @@ typedef enum neuton_dsp_stat_feature_id_e
     NEUTON_DSP_STAT_FID_TCR,
     NEUTON_DSP_STAT_FID_P2P_LF,
     NEUTON_DSP_STAT_FID_P2P_HF,
+    NEUTON_DSP_STAT_FID_ABSMEAN,
+    NEUTON_DSP_STAT_FID_AMDF,
 } neuton_dsp_stat_feature_id_t;
 
 /**
@@ -89,6 +91,8 @@ typedef void (*neuton_dsp_get_feature_arg_cb_t)(neuton_dsp_pipeline_t ppln, neut
 #define NEUTON_DSP_STAT_FBIT_KUR          (1U << NEUTON_DSP_STAT_FID_KUR)
 #define NEUTON_DSP_STAT_FBIT_P2P_LF       (1U << NEUTON_DSP_STAT_FID_P2P_LF)
 #define NEUTON_DSP_STAT_FBIT_P2P_HF       (1U << NEUTON_DSP_STAT_FID_P2P_HF)
+#define NEUTON_DSP_STAT_FBIT_ABSMEAN      (1U << NEUTON_DSP_STAT_FID_ABSMEAN)
+#define NEUTON_DSP_STAT_FBIT_AMDF         (1U << NEUTON_DSP_STAT_FID_AMDF)
 
 /**
  * @brief DSP Statistical features mask type for feature extracting API
@@ -98,20 +102,22 @@ typedef union neuton_dsp_stat_features_mask_u
 {
     struct
     {
-        bool min    : 1; // Minimum
-        bool max    : 1; // Maximum
-        bool range  : 1; // Range
-        bool mean   : 1; // Mean
-        bool mad    : 1; // Mean Absolute Deviation
-        bool skew   : 1; // Skewness
-        bool kur    : 1; // Kurtosis
-        bool std    : 1; // Standard Deviation
-        bool rms    : 1; // Root Mean Square
-        bool mcr    : 1; // Mean-crossing Rate
-        bool zcr    : 1; // Zero-crossing Rate
-        bool tcr    : 1; // Threshold-crossing Rate
-        bool p2p_lf : 1; // Peak-to-Peak Low Frequency
-        bool p2p_hf : 1; // Peak-to-Peak High Frequency
+        bool min     : 1; // Minimum
+        bool max     : 1; // Maximum
+        bool range   : 1; // Range
+        bool mean    : 1; // Mean
+        bool mad     : 1; // Mean Absolute Deviation
+        bool skew    : 1; // Skewness
+        bool kur     : 1; // Kurtosis
+        bool std     : 1; // Standard Deviation
+        bool rms     : 1; // Root Mean Square
+        bool mcr     : 1; // Mean-crossing Rate
+        bool zcr     : 1; // Zero-crossing Rate
+        bool tcr     : 1; // Threshold-crossing Rate
+        bool p2p_lf  : 1; // Peak-to-Peak Low Frequency
+        bool p2p_hf  : 1; // Peak-to-Peak High Frequency
+        bool absmean : 1; // Absolute mean
+        bool amdf    : 1; // Average magnitude difference
     } is;
     neuton_u16_t all;
 } neuton_dsp_stat_features_mask_t;

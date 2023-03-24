@@ -1,4 +1,4 @@
-/* 2023-02-13T10:48:08Z */
+/* 2023-03-22T12:55:09Z */
 
 /* ----------------------------------------------------------------------
 Copyright (c) 2022-2023 Neuton.AI, Inc.
@@ -31,13 +31,13 @@ applicable.
 #ifndef _NEUTON_USER_MODEL_CONFIG_H_
 #define _NEUTON_USER_MODEL_CONFIG_H_
 
-#define NEUTON_NN_MODEL_SOLUTION_ID_STR "77468_hand_righties_more_hair_brush"
+#define NEUTON_NN_MODEL_SOLUTION_ID_STR "~"
 #define NEUTON_NN_MODEL_TASK_TYPE 0
 #define NEUTON_NN_MODEL_QTYPE 0
 #define NEUTON_NN_MODEL_FLOAT_SUPPORT 0
 
-#define NEUTON_NN_MODEL_NEURONS_NUM 159
-#define NEUTON_NN_MODEL_WEIGHTS_NUM 1210
+#define NEUTON_NN_MODEL_NEURONS_NUM 136
+#define NEUTON_NN_MODEL_WEIGHTS_NUM 1006
 #define NEUTON_NN_MODEL_OUTPUTS_NUM 5
 
 #define NEUTON_NN_OUTPUTS_LOG_SCALED 0

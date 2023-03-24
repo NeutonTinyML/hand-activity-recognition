@@ -50,7 +50,8 @@ else()
     add_subdirectory(skewness)
     add_subdirectory(kurtosis)
     add_subdirectory(moments)
-    add_subdirectory(peak2peak)   
+    add_subdirectory(peak2peak)
+    add_subdirectory(amdf)
     
     target_link_libraries(${PROJECT_NAME}
     INTERFACE
@@ -78,6 +79,7 @@ else()
         Neuton::DSP::Statistic::Kurtosis
         Neuton::DSP::Statistic::Moments
         Neuton::DSP::Statistic::PeakToPeak
+        Neuton::DSP::Statistic::AverageMagnitudeDiff
     )
 
 endif()

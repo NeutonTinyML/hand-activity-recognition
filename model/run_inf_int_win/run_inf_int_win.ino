@@ -12,7 +12,7 @@
 
 #define NUM_CLASSES     (5)
 //                      RAND   CLAP   TEETH   HANDS   HAIR
-#define THRESHOLDS      0.50,  0.85,  0.85,   0.85,   0.85
+#define THRESHOLDS      0.50,  0.91,  0.85,   0.92,   0.85
 
 #define AVG_COUNT       ((AVG_TIME_MS / HOP_MS) + (AVG_TIME_MS % HOP_MS ? 1 : 0))
 
@@ -137,12 +137,12 @@ public:
     sample[i++] = _d_accelerometer.x;
     sample[i++] = _d_accelerometer.y;
     sample[i++] = _d_accelerometer.z;
-    sample[i++] = _d_linear_accelerometer.x;
-    sample[i++] = _d_linear_accelerometer.y;
-    sample[i++] = _d_linear_accelerometer.z;
-    // sample[i++] = _d_gyroscope.x;
-    // sample[i++] = _d_gyroscope.y;
-    // sample[i++] = _d_gyroscope.z;
+    // sample[i++] = _d_linear_accelerometer.x;
+    // sample[i++] = _d_linear_accelerometer.y;
+    // sample[i++] = _d_linear_accelerometer.z;
+    sample[i++] = _d_gyroscope.x;
+    sample[i++] = _d_gyroscope.y;
+    sample[i++] = _d_gyroscope.z;
 
     unsigned long _start = micros();
     neuton_inference_input_t* input = neuton_nn_feed_inputs(sample, neuton_nn_uniq_inputs_num());

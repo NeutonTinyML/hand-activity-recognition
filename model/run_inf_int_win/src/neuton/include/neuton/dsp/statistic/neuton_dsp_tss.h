@@ -1,6 +1,6 @@
 /**
  *
- * @defgroup neuton_dsp_statistic_tss Total Sum of Squares
+ * @defgroup neuton_dsp_statistic_tss Total Sum of Squares (Energy)
  * @{
  * @ingroup neuton_dsp_statistic
  *

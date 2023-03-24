@@ -34,6 +34,7 @@
 #include "statistic/neuton_dsp_kur.h"
 #include "statistic/neuton_dsp_moments.h"
 #include "statistic/neuton_dsp_pk2pk.h"
+#include "statistic/neuton_dsp_amdf.h"
 
 #endif /* _NEUTON_DSP_STATISTIC_FUNCTIONS_H_ */
 

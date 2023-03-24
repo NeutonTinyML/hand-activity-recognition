@@ -19,6 +19,8 @@
 #define NEUTON_DSP_PIPELINE_COMPUTE_P2P_LF            0
 #define NEUTON_DSP_PIPELINE_COMPUTE_P2P_HF            0
 #define NEUTON_DSP_PIPELINE_COMPUTE_P2P_LF_HF         1
+#define NEUTON_DSP_PIPELINE_COMPUTE_ABSMEAN           1
+#define NEUTON_DSP_PIPELINE_COMPUTE_AMDF              1
 
 /** Defines the spectral features to be included in the pipeline */
 #define NEUTON_DSP_PIPELINE_COMPUTE_SPECTR_PEAKS_FREQ   1

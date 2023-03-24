@@ -50,7 +50,7 @@ neuton_i8_t neuton_dsp_melspectr_make_f32(neuton_dsp_melspectr_ctx_f32_t* p_ctx,
 
     neuton_f32_t* p_melspectrum = &p_ctx->p_melspectrum[p_ctx->current_fill * p_ctx->freq_bands];
 
-    mel_scale_(p_ctx->fht.p_window, p_ctx->fht.window_size, 
+    mel_scale_((const neuton_f32_t*)p_ctx->fht.p_window, p_ctx->fht.window_size, 
                 p_ctx->sample_rate, p_melspectrum, p_ctx->freq_bands);
 
     for (neuton_u16_t i = 0; i < p_ctx->freq_bands; ++i)

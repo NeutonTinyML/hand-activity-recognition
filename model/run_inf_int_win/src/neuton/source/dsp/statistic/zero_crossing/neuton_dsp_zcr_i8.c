@@ -73,7 +73,7 @@ neuton_i16_t neuton_dsp_zcr_i8(const neuton_i8_t *p_input, neuton_u16_t num)
         loop_cnt--;
     }
 
-    return (neuton_i16_t)(((int32_t)zcr * NEUTON_INT_TO_F32_PRECISION_FACTOR) / (num - 1));
+    return (neuton_i16_t)(((neuton_i32_t)zcr * NEUTON_INT_TO_F32_PRECISION_FACTOR) / (num - 1));
 }
 
 // ///////////////////////////////////////////////////////////////////////////
@@ -147,5 +147,5 @@ neuton_i16_t neuton_dsp_zcr_i8_s(const neuton_i8_t* p_input, neuton_u16_t num,
         loop_cnt--;
     }
 
-    return (neuton_i16_t)(((int32_t)zcr * NEUTON_INT_TO_F32_PRECISION_FACTOR) / (num - 1));
+    return (neuton_i16_t)(((neuton_i32_t)zcr * NEUTON_INT_TO_F32_PRECISION_FACTOR) / (num - 1));
 }

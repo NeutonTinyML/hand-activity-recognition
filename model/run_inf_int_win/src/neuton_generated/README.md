@@ -1,1 +1,0 @@
-# This's directory for Neuton.ai solution generated files

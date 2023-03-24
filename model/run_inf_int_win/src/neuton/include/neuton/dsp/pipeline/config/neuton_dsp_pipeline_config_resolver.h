@@ -1,6 +1,18 @@
 #ifndef _NEUTON_NN_FE_CONFIG_RESOLVER_H_
 #define _NEUTON_NN_FE_CONFIG_RESOLVER_H_
 
+// ////////////////////// User config compatibility resolver start ///////////
+
+#ifndef NEUTON_DSP_PIPELINE_COMPUTE_ABSMEAN
+#define NEUTON_DSP_PIPELINE_COMPUTE_ABSMEAN             0
+#endif
+
+#ifndef NEUTON_DSP_PIPELINE_COMPUTE_AMDF
+#define NEUTON_DSP_PIPELINE_COMPUTE_AMDF                0
+#endif
+
+// ////////////////////// User config compatibility resolver end /////////////
+
 #define NEUTON_DSP_USE_STAT_PIPELINE        (NEUTON_DSP_PIPELINE_COMPUTE_MIN      || NEUTON_DSP_PIPELINE_COMPUTE_MAX     || \
                                              NEUTON_DSP_PIPELINE_COMPUTE_MIN_MAX  || NEUTON_DSP_PIPELINE_COMPUTE_RANGE   || \
                                              NEUTON_DSP_PIPELINE_COMPUTE_MEAN     || NEUTON_DSP_PIPELINE_COMPUTE_RMS     || \
@@ -9,7 +21,8 @@
                                              NEUTON_DSP_PIPELINE_COMPUTE_MAD      || NEUTON_DSP_PIPELINE_COMPUTE_SKEW    || \
                                              NEUTON_DSP_PIPELINE_COMPUTE_KUR      || NEUTON_DSP_PIPELINE_COMPUTE_MOMENTS ||\
                                              NEUTON_DSP_PIPELINE_COMPUTE_P2P_LF   || NEUTON_DSP_PIPELINE_COMPUTE_P2P_HF  ||\
-                                             NEUTON_DSP_PIPELINE_COMPUTE_P2P_LF_HF)
+                                             NEUTON_DSP_PIPELINE_COMPUTE_P2P_LF_HF || NEUTON_DSP_PIPELINE_COMPUTE_ABSMEAN || \
+                                             NEUTON_DSP_PIPELINE_COMPUTE_AMDF)
 
 #define NEUTON_DSP_PIPELINE_STAT_FEATURES_CNT       (NEUTON_DSP_PIPELINE_COMPUTE_MIN          + NEUTON_DSP_PIPELINE_COMPUTE_MAX     + \
                                                     NEUTON_DSP_PIPELINE_COMPUTE_RANGE         + NEUTON_DSP_PIPELINE_COMPUTE_MEAN    + \
@@ -18,6 +31,7 @@
                                                     NEUTON_DSP_PIPELINE_COMPUTE_TCR           + NEUTON_DSP_PIPELINE_COMPUTE_MAD     + \
                                                     NEUTON_DSP_PIPELINE_COMPUTE_SKEW          + NEUTON_DSP_PIPELINE_COMPUTE_KUR     + \
                                                     NEUTON_DSP_PIPELINE_COMPUTE_P2P_LF        + NEUTON_DSP_PIPELINE_COMPUTE_P2P_HF  + \
+                                                    NEUTON_DSP_PIPELINE_COMPUTE_ABSMEAN       + NEUTON_DSP_PIPELINE_COMPUTE_AMDF  + \
                                                     (2 * NEUTON_DSP_PIPELINE_COMPUTE_MOMENTS) + \
                                                     (2 * NEUTON_DSP_PIPELINE_COMPUTE_MIN_MAX) + \
                                                     (2 * NEUTON_DSP_PIPELINE_COMPUTE_P2P_LF_HF))

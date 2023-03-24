@@ -263,6 +263,28 @@ neuton_u8_t neuton_dsp_pipeline_stat_compute_f32(const neuton_f32_t* p_input, ne
 #endif // #if (NEUTON_DSP_PIPELINE_COMPUTE_P2P_LF_HF)
 // ///////////////////////////////////////////////////////////////////////////
 
+// ///////////////////////////////////////////////////////////////////////////
+#if (NEUTON_DSP_PIPELINE_COMPUTE_ABSMEAN)
+
+    if (feature_mask.is.absmean)
+    {
+        *p_features = neuton_dsp_absmean_f32(p_input, num, p_ctx);
+        p_features++;
+    }
+#endif
+// ///////////////////////////////////////////////////////////////////////////
+
+// ///////////////////////////////////////////////////////////////////////////
+#if (NEUTON_DSP_PIPELINE_COMPUTE_AMDF)
+
+    if (feature_mask.is.amdf)
+    {
+        *p_features = neuton_dsp_amdf_f32(p_input, num);
+        p_features++;
+    }
+#endif
+// ///////////////////////////////////////////////////////////////////////////
+
     /** Prevent compilation warnings */
     NEUTON_UNUSED(feature_mask);
     NEUTON_UNUSED(get_argument);

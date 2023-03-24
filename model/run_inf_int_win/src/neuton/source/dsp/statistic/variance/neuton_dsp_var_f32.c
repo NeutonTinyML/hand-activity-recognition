@@ -58,7 +58,7 @@ neuton_f32_t neuton_dsp_var_f32(const neuton_f32_t* p_input, neuton_u16_t num,
     }
 
     // Use sum_squared_diffs to store the result of the variance calculation
-    sum_squared_diffs = sum_squared_diffs / (num - 1);
+    sum_squared_diffs = sum_squared_diffs / num;
 
     if (p_ctx)
     {
@@ -132,7 +132,7 @@ neuton_f32_t neuton_dsp_var_f32_s(const neuton_f32_t* p_input, neuton_u16_t num,
     }
 
     // Use sum_squared_diffs to store the result of the variance calculation
-    sum_squared_diffs = sum_squared_diffs / (num - 1);
+    sum_squared_diffs = sum_squared_diffs / num;
 
     if (p_ctx)
     {

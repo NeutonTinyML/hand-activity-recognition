@@ -1,4 +1,4 @@
-/* 2023-02-13T10:48:08Z */
+/* 2023-03-22T12:55:09Z */
 
 /* ----------------------------------------------------------------------
 Copyright (c) 2022-2023 Neuton.AI, Inc.
@@ -44,32 +44,18 @@ static const neuton_u8_t INPUT_FEATURES_USED_FOR_LAGS_MASK[] = { 0x00 };
 /** Defines DSP feature calculation masks used as neuton_dsp_features_mask_t,
  *  32 bit for one unique feature, @ref neuton_dsp_features_mask_t to see bitmask
  */
-static const neuton_u32_t DSP_FEATURES_CALCULATION_MASK[] = { 939458560 };
-
-/** Defines DSP feature calculation arguments used by DSP pipeline,
- *  32 bit for one feature argument
- */
-static const neuton_input_t DSP_FEATURES_CALCULATION_ARGS[] = {
-	4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4 };
+static const neuton_u32_t DSP_FEATURES_CALCULATION_MASK[] = { 127401984 };
 
 /** Defines DSP features MAX scaling factor
  */
 static const neuton_feature_t DSP_FEATURES_SCALE_MIN[] = {
-	-32768, -4044, 24, -5075, 3, -44402, 4117, 5, 21, 0, 0, 14, 13, -22743,
-	-3619, 19, -6647, 2, -51077, 4111, 4, 5, 0, 0, 10, 12, -29597, -3971, 19,
-	-4187, 3, -44195, 4134, 4, 38, 0, 0, 11, 13, -30021, -334, 21, -2520, 3,
-	-46554, 5165, 4, 4, 0, 0, 11, 12, -19972, -1671, 17, -4667, 2, -51561,
-	5362, 3, 4, 0, 0, 8, 11, -28273, -49, 17, -3517, 2, -43504, 5210, 4, 4,
-	0, 0, 8, 13 };
+	-5075, 3, 9, 21, 0, 0, -6647, 2, 4, 5, 0, 0, -4187, 3, 8, 38, 0, 0, -2129,
+	0, 0, 0, 0, 0, -2336, 1, 2, 2, 0, 0, -3664, 0, 0, 0, 0, 0 };
 
 /** Defines DSP features MIN scaling factor
  */
 static const neuton_feature_t DSP_FEATURES_SCALE_MAX[] = {
-	3814, 19657, 51537, 4262, 7077, 49645, 665984, 8337, 8958, 48, 34, 37982,
-	40456, 4028, 18574, 32463, 4504, 6071, 49053, 694272, 6767, 7739, 50, 44,
-	26202, 24567, 4061, 31815, 44453, 4798, 6849, 49803, 646256, 7900, 8566,
-	50, 21, 29872, 40740, 236, 22589, 51929, 1660, 6429, 49191, 634304, 7697,
-	7719, 47, 47, 38049, 40324, 233, 15366, 30318, 830, 5799, 51166, 703168,
-	6472, 6493, 58, 53, 23653, 24405, 353, 31294, 43655, 1153, 6179, 47786,
-	637056, 7362, 7373, 50, 46, 29108, 40515 };
+	4262, 7077, 8977, 8958, 48, 34, 4504, 6071, 7753, 7739, 50, 44, 4798, 6849,
+	8584, 8566, 50, 21, 1255, 6025, 6691, 6674, 39, 39, 2381, 10917, 12549,
+	12517, 33, 33, 1696, 5770, 6357, 6342, 42, 41 };
 
