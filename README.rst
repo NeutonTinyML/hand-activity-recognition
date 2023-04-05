@@ -42,7 +42,9 @@ Sketch -> Include Library -> Add .ZIP Library… (point to the downloaded ‘Ard
 .. image:: embed-manual-4.png
 
 8. Test the model - perform the desired activity
-9. The model will output the corresponding class and its probability
+9. The model will output the current predicted class and its probability
+
+.. image:: embed-manual-5.png
 
 Please refer to the video example of inferencing the model.
 
