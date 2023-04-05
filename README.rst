@@ -28,8 +28,7 @@ Sketch -> Include Library -> Add .ZIP Library… (point to the downloaded ‘Ard
 .. image:: embed-manual-1.png
 
 4. Quit & restart the Arduino IDE (it will take up to a minute for the Arduino IDE to index all of it’s examples, including the freshly installed ‘Arduino_Neuton’
-5. Open the installed example
-File -> Examples -> Arduino_Neuton -> Human_Activity_Recognition_Model (a new Arduino IDE window will pop up, close the previous Arduino IDE window) 
+5. Open the installed example: File -> Examples -> Arduino_Neuton -> Human_Activity_Recognition_Model (a new Arduino IDE window will pop up, close the previous Arduino IDE window) 
 
 .. image:: embed-manual-2.png
 
